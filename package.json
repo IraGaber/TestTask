@@ -1,0 +1,23 @@
+{
+  "name": "sponge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0"
+  },
+  "browserslist": [ 
+    "last 5 version",
+    "IE 10"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
