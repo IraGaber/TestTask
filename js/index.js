@@ -21,14 +21,11 @@ $('.footer__arow').click(function(){
 	//клик может произойти на img и на btn, проверяем оба
 	if( $(event.target).hasClass('footer__arow_next') ||
 						$(event.target).parent().hasClass('footer__arow_next')){
-		
 		var scrollTo = $('section.current').next();
 	}
 	else if( $(event.target).hasClass('footer__arow_prev') ||
 						$(event.target).parent().hasClass('footer__arow_prev') ){ 
 		var scrollTo = $('section.current').prev();
-
-
 	}
 
 	$('html, body').animate({scrollTop: scrollTo.position().top}, 1000);
@@ -57,10 +54,13 @@ $('.login__btn_forgot').click(function(){
 $('.popup__close, .login__submit, .forgot__submit, .activate__btn').click(function(){
 	$("body, html").removeClass('open-modal');
 	$(".popup-wrapper").hide();
+	return false;
 });
-$('.registration__input_submit, email__submit').click(function(){
+$('.registration__input_submit, .email__submit').click(function(){
 	$(".popup__content").hide();
 	$(".popup__content_finish-reg").show();
+	return false;
+
 });
 $('.registration__social-btn').click(function(){
 	$(".popup__content").hide()
